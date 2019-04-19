@@ -78,12 +78,22 @@ between technology and those who are underrepresented in the field!</p>
 </main>
 
 <!--
-<p class ="homeMessage"> Welcome to techVine! Here at techVine users can become more
-connected within tech. Visit our site to learn more about conferences, scholarships,
-and opportunities available for students of color interested in technology careers.
-Last year it was reported that just 2.5 percent of employees are
-Black and 3.6 percent are Latinx. techVine's mission is to bridge the gap
-between technology and those who are underrepresented in the field!</p>
+<script>
+var stickymenu = document.getElementById("stickymenu")
+var stickymenuoffset = stickymenu.offsetTop
+var scrolltimer
+
+window.addEventListener("scroll", function(e){
+    requestAnimationFrame(function(){
+        if (window.pageYOffset > stickymenuoffset){
+            stickymenu.classList.add('sticky')
+        }
+        else{
+            stickymenu.classList.remove('sticky')
+        }
+    })
+})
+</script>
 -->
 
 

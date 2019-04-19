@@ -16,11 +16,14 @@ body{
 header {
   display: absolute;
   top: 0;
+  margin-top: 50px;
+
 }
 
+/*Sticky*/
 .navbar {
     font-size: 18px;
-    background-image: linear-gradient(260deg, #aa80ff 0%, #aa80ff  100%);
+   background-image: linear-gradient(260deg, #2376ae 0%, #9933ff   100%);
 
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding-bottom: 10px;
@@ -30,6 +33,10 @@ header {
     border: 0;
     outline: 0;
     vertical-align: baseline;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+  
 
 }
 .main-nav {
@@ -171,7 +178,7 @@ a.skip:focus{
   left: 53%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size:15px
+  font-size:6px
 }
 
 @media screen and (min-width:780px){
@@ -314,7 +321,7 @@ a.skip:focus{
     margin: 10px;
     border: none;
     padding: 20px;
-   background-color: ##f9e5ff;
+   background-color: #f9e5ff;
 
   }
 
@@ -406,7 +413,7 @@ body,html{margin:0;padding:0;}
   align-items: center;
   justify-content: center;
   color: white;
-  text-shadow: 0 0 4px #000;
+  text-shadow: 0 0 3px #000;
 }
 
 .parallax::after {
@@ -609,6 +616,28 @@ body,html{margin:0;padding:0;}
       left:49%;
       
     }
+
+/*type writer*/
+.hero-text {
+    display: inline-block;
+    overflow: hidden;
+    letter-spacing: 2px;
+    animation: typing 5s steps(30, end), blink .75s step-end infinite;
+    white-space: nowrap;
+    font-size: 30px;
+    font-weight: 700;
+    /*border-right: 4px solid orange;*/
+    box-sizing: border-box;
+}
+
+@keyframes typing {
+    from { 
+        width: 0% 
+    }
+    to { 
+        width: 100% 
+    }
+}
 
 
 
